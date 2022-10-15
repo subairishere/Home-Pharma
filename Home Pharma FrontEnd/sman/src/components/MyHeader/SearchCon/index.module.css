@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+}
+
+.search_con {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #e08700;
+}
+
+.search_con input {
+  padding: 0.3rem 0.5rem;
+  font: inherit;
+  border: none;
+  flex-grow: 1;
+}
+
+.search_con input:focus,
+.search_con input:focus + .button {
+  outline: none;
+}
+
+.button {
+  background: #ff9800;
+  padding: 0.3rem;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover,
+.button:focus {
+  background: #e08700;
+}
+
+.search_con img {
+  width: 100%;
+  max-width: 24px;
+  height: 100%;
+  max-height: 24px;
+}
+
+.cameraCon {
+  background: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.cameraCon:hover img {
+  opacity: 0.8;
+}

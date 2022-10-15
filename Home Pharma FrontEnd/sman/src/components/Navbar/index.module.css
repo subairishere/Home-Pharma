@@ -1,0 +1,30 @@
+.navbarCon {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 0.3rem 1rem;
+  overflow: auto;
+}
+
+.navbarCon::-webkit-scrollbar {
+  height: 5px;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: gray;
+}
+
+.navbar a:hover {
+  color: rgb(85, 84, 84);
+}

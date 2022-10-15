@@ -1,0 +1,46 @@
+.saleItem {
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  cursor: pointer;
+  color: #111;
+}
+
+.saleItem:hover {
+  background-color: #eee;
+}
+
+.saleItem * {
+  margin: 0;
+  text-decoration: none !important;
+}
+
+.saleItem header,
+.saleItem .info {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.saleItem p {
+  margin-bottom: 0.5rem;
+}
+
+.saleItem h4 {
+  margin-bottom: 0.8rem;
+}
+
+.saleDetailHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saleDetailHeader select {
+  font: inherit;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}

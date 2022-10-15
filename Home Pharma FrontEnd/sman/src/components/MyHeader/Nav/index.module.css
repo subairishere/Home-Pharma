@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav img {
+  width: 28px;
+}
+
+.nav > * {
+  cursor: pointer;
+}
+
+.nav > *:hover {
+  opacity: 0.9;
+}
+.nav a {
+  text-decoration: none;
+  color: #111;
+}
+
+.txt {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .nav {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .txt {
+    display: initial;
+    margin-left: 1rem;
+  }
+  .nav a {
+    display: flex;
+    align-items: center;
+  }
+}

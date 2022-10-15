@@ -1,0 +1,16 @@
+.section {
+  padding: 1rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media (max-width: 650px) {
+  .items {
+    justify-items: center;
+  }
+}

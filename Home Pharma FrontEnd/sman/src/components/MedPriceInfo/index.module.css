@@ -1,0 +1,79 @@
+.container {
+  align-self: flex-start;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.header {
+  padding: 0.3rem 0.5rem;
+  text-transform: uppercase;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+.info {
+  display: grid;
+  gap: 0.3rem;
+  margin: 1.5rem 0;
+}
+
+.price {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.price .original {
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  color: red;
+}
+
+.units {
+  display: flex;
+  gap: 1rem;
+}
+
+.units input {
+  text-align: center;
+  max-width: 100px;
+  outline: none;
+  border: 1px solid gray;
+}
+.units input:active,
+.units input:focus {
+  border-color: darkgreen;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  background: green;
+  color: white;
+  border: 1px solid transparent;
+  font: inherit;
+  cursor: pointer;
+  transition: 150ms transform;
+}
+
+.button:hover {
+  background: white;
+  border-color: darkgreen;
+  color: green;
+}
+
+.button:first-child:active {
+  transform: translateY(5px);
+}
+
+.button:last-child {
+  background: white;
+  color: green;
+  border: 2px solid green;
+  font-weight: bold;
+  margin-top: 1rem;
+}

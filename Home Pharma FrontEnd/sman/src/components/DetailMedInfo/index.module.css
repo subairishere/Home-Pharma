@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 550px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container h2:first-child {
+  margin-top: 0;
+}
+
+.container h2,
+.container h3 {
+  color: green;
+}
+.question {
+  font-weight: bold;
+}
+
+.links {
+  width: 100%;
+  background: #eee;
+  align-self: flex-start;
+  padding: 1rem 0;
+}
+
+@media (min-width: 551px) {
+  .links {
+    max-width: 350px;
+    position: sticky;
+    top: 50px;
+  }
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.links li {
+  padding: 0.5rem;
+}
+
+.links a {
+  color: #111;
+  background: #eee;
+  text-decoration: none;
+
+  margin-bottom: 1rem;
+}
+
+.links a:hover {
+  background: #ddd;
+}

@@ -1,0 +1,36 @@
+.aside {
+  z-index: 100;
+  width: 300px;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  left: -400px;
+  transition: left 400ms;
+}
+
+.aside.show {
+  left: 0;
+}
+
+.aside,
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+}
+
+.modal {
+  opacity: 0;
+  z-index: -50;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 200ms;
+}
+
+.modal.show {
+  z-index: 50;
+  opacity: 1;
+}

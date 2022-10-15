@@ -1,0 +1,79 @@
+.item {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  gap: 1rem;
+  font-size: 80%;
+}
+
+.imgCon {
+  width: 120px;
+  height: 90px;
+}
+
+.imgCon img {
+  width: 100%;
+  height: 100%;
+}
+
+.item > div > h3 {
+  margin: 0;
+}
+.item > div > h3 + span {
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+.itemPrice {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.itemPrice div {
+  text-align: right;
+}
+
+.itemPrice div span {
+  font-size: 80%;
+}
+
+.itemPrice div span:first-child {
+  font-size: 100%;
+}
+
+.itemPrice img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.quantity input {
+  width: 50px;
+  text-align: center;
+  background-color: #efefef;
+}
+
+.quantity > * {
+  font: 0.8rem;
+  padding: 0.5rem;
+  border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.quantity input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity button {
+  background: #ccc;
+  cursor: pointer;
+}

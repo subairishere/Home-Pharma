@@ -1,0 +1,16 @@
+.boxes {
+  display: flex;
+  gap: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 1rem;
+  background: #efefef;
+}
+
+.box img {
+  max-width: 100%;
+}

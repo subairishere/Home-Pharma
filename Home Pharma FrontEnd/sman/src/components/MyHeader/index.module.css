@@ -1,0 +1,40 @@
+.header {
+  padding: 0.5rem 1rem;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  background: green;
+}
+
+.logoCon {
+  width: 180px;
+}
+
+.logoCon img {
+  width: 100%;
+}
+
+.more {
+  display: none;
+}
+
+.links {
+  margin-left: auto;
+}
+
+@media (max-width: 650px) {
+  .header {
+    gap: 1rem;
+  }
+
+  .links {
+    display: none;
+    margin-left: 0;
+  }
+
+  .more {
+    display: initial;
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.imgCon {
+  width: 100%;
+  max-width: 300px;
+}
+
+.imgCon img {
+  width: 100%;
+}
+
+.brand,
+.container h1 {
+  text-transform: capitalize;
+}
+
+.tags {
+  border-top: 1px solid gray;
+  padding-top: 1rem;
+}
+
+.tags span {
+  background: #cfc;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.purpose {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}

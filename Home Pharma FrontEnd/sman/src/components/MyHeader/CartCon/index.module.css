@@ -1,0 +1,51 @@
+.container {
+  left: auto;
+  padding: 1rem;
+  right: -450%;
+  width: 450px;
+  overflow-y: auto;
+  transition: right 200ms;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+  background: #eee;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+.container.show {
+  left: auto;
+  right: 0;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  border-top: 2px solid gray;
+}
+.total h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total button {
+  background: green;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: 2px solid green;
+  cursor: pointer;
+}
+
+.total button:hover {
+  background: white;
+  color: green;
+}

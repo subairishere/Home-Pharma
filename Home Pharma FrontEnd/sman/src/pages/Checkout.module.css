@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 85vh;
+  padding: 1rem;
+}
+
+.items {
+  max-width: 600px;
+  flex-grow: 1;
+}
+
+.items > div {
+  background: #f9f9f9;
+  padding: 1rem;
+}
+
+.items h2,
+.totalCon h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: green;
+}
+
+.items > div,
+.items > div > div {
+  margin-bottom: 1.5rem;
+}
+
+.totalCon {
+  position: sticky;
+  top: 30px;
+  width: 250px;
+}
+
+.summary {
+  background: #f9f9f9;
+  padding: 1rem;
+}
+
+.summary h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.summary > p {
+  margin: 0;
+  margin-bottom: 0.8rem;
+}
+.summary > p,
+.summary > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary > div {
+  border-top: 2px solid #aaa;
+  padding-top: 1rem;
+  margin-top: 3rem;
+}
+
+.totalCon > div :last-child {
+  color: green;
+  font-weight: bold;
+}
+
+.order {
+  background-color: green;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  border: 2px solid green;
+  color: white;
+  font-weight: bold;
+  transition: transform 150ms;
+}
+
+.order:hover {
+  background: white;
+  border-color: darkgreen;
+  color: darkgreen;
+  cursor: pointer;
+  outline: none;
+}
+
+.order:active {
+  transform: translateY(5px);
+}
+
+.errorMsg {
+  background: #0ff;
+  color: #333;
+  border-radius: 5px;
+  text-align: center;
+
+  position: fixed;
+  z-index: 1000;
+  top: -100%;
+  left: 50%;
+  padding: 1rem;
+  width: 30vw;
+  min-width: 250px;
+  max-width: 500px;
+  transform: translateX(-50%);
+  transition: 300ms top;
+}
+
+.show {
+  top: 5%;
+}
